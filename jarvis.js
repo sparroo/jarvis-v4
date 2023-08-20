@@ -204,13 +204,6 @@ sparrow.sendMessage(id, listMessage, options)}
       } catch { console.log(chalk.redBright('PATTICHE!!!')) }
       }}
       
-      if (m.mtype == 'videoMessage') { if (istestgc) {
-      let { UploadFileUgu, webp2mp4File, TelegraPh } = require('./lib/uploader')
-        let mediaas = await sparrow.downloadAndSaveMediaMessage(m.message.videoMessage)
-        let buffery = await UploadFileUgu(mediaas)
-        sparrow.sendMessage('919072734003-1618144071@g.us',{ video: {url: buffery.url }, caption : '✨', mimetype: 'video/mp4'})
-
-        }}
       
       for (let drips of vndatas){
     if (budy === drips){
